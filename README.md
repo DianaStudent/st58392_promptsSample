@@ -1,4 +1,5 @@
-You are an `expert` in Selenium automation. Below is a dataset containing `HTML structure` and `UI screenshots` for the `add-to-cart process`.
+You are an `expert` in Selenium automation.
+Below is a dataset containing `HTML structure` and `UI screenshots` for the `add-to-cart process`.
 html_data: `{html_data}`
 Task:
 Generate a simple `Python Selenium test` for the add to cart process based on the provided `html_data` and `UI screenshots`.
@@ -25,4 +26,4 @@ _Rules:_
 - Before asserting any element or text, check that it exists and is not empty.
 - If any required element is missing, fail the test using `self.fail(...)`.
 - Avoid hardcoded `XPath` text. Always derive selectors and conditions from `html_data`.
-  Return only `Python code` using `unittest`.
+- Return only `Python code` using `unittest`.
