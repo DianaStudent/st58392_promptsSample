@@ -1,10 +1,15 @@
-You are an `expert` in Selenium automation.
-Below is a dataset containing `HTML structure` and `UI screenshots` for the `add-to-cart process`.
+#### You are an `expert` in Selenium automation.
+
+#### Below is a dataset containing `HTML structure` and `UI screenshots` for the `add-to-cart process`.
+
 html_data: `{html_data}`
-Task:
+
+##### _Task:_
+
 Generate a simple `Python Selenium test` for the add to cart process based on the provided `html_data` and `UI screenshots`.
 `URL: http://localhost/`
-\_Test scenario:\*
+
+##### _Test scenario:_
 
 1. Open the `home page`.
 2. Hover over the first product.
@@ -14,7 +19,7 @@ Generate a simple `Python Selenium test` for the add to cart process based on th
 6. Click `"View cart"` or similar button inside the popup.
 7. On the cart page, verify that the product appears in the `cart list`.
 
-_Rules:_
+##### _Rules:_
 
 - Hover over a product item to reveal the `"Add to cart" button`.
 - Open the cart popup by clicking the `cart icon`.
