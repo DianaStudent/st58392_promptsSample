@@ -22,7 +22,7 @@ Test scenario:
 - Use webdriver-manager to manage ChromeDriver.
 - Use selectors strictly from html_data.
 - Use WebDriverWait with a timeout of 20 seconds before interacting with elements.
-- Use unittest with setUp() and tearDown().
+- Use unittest with <pre>setUp()</pre> and <pre>tearDown()</pre>.
 - Before asserting any element or text, check that it exists and is not empty.
 - If any required element is missing, fail the test using self.fail(...).
 - Use presence_of_element_located to locate elements. Use visibility checks only when needed.
