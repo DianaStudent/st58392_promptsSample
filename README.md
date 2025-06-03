@@ -1,30 +1,28 @@
-You are an expert in Selenium automation. Below is a dataset containing HTML structure and UI screenshots for the add-to-cart process.
-html_data: {html_data}
+You are an `expert` in Selenium automation. Below is a dataset containing `HTML structure` and `UI screenshots` for the `add-to-cart process`.
+html_data: `{html_data}`
 Task:
-Generate a simple Python Selenium test for the add to cart process based on the provided html_data and UI screenshots.
-URL: `http://localhost:8080/en/`
-Test scenario:
+Generate a simple `Python Selenium test` for the add to cart process based on the provided `html_data` and `UI screenshots`.
+`URL: http://localhost/`
+\_Test scenario:\*
 
-1. Open the home page.
-2. Click on a product category from the top navigation menu (e.g. ART).
-3. Wait for the category page to load.
-4. Click on the first product in the list.
-5. On the product detail page, click the "Add to cart" button.
-6. Wait for the modal popup to appear after the product is added.
-7. Confirm that the modal title or content includes a success message like "successfully added".
-8. Optionally, locate and assert the presence of a "Proceed to checkout" button inside the modal.
+1. Open the `home page`.
+2. Hover over the first product.
+3. Click the revealed `"Add to cart"` button.
+4. Click the cart icon to open the`popup cart`.
+5. Wait for the `popup` to become visible.
+6. Click `"View cart"` or similar button inside the popup.
+7. On the cart page, verify that the product appears in the `cart list`.
 
-`Rules:`
+_Rules:_
 
-- Wait for the modal (popup) confirmation to appear after adding to cart.
-- Confirm success by verifying the presence of the modal title that contains "successfully added" or similar.
-- Do not rely on dynamic ID values — use label or section attributes like data-name instead.
-- Use webdriver-manager to manage ChromeDriver.
-- Use selectors strictly from html_data.
-- Use WebDriverWait with a timeout of 20 seconds before interacting with elements.
-- Use unittest with <pre>setUp()</pre> and <pre>tearDown()</pre>.
+- Hover over a product item to reveal the `"Add to cart" button`.
+- Open the cart popup by clicking the `cart icon`.
+- Confirm success by checking that the popup contains at least one item.
+- Use `webdriver-manager` to manage ChromeDriver.
+- Use selectors strictly from `html_data`.
+- Use `WebDriverWait` with a timeout of 20 seconds before interacting with elements.
+- Use unittest with `setUp()` and `tearDown()`.
 - Before asserting any element or text, check that it exists and is not empty.
-- If any required element is missing, fail the test using self.fail(...).
-- Use presence_of_element_located to locate elements. Use visibility checks only when needed.
-- Avoid hardcoded XPath text. Always derive selectors and conditions from html_data.
-  Return only Python code using unittest.
+- If any required element is missing, fail the test using `self.fail(...)`.
+- Avoid hardcoded `XPath` text. Always derive selectors and conditions from `html_data`.
+  Return only `Python code` using `unittest`.
